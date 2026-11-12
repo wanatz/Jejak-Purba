@@ -1,0 +1,41 @@
+name: jatim_prehistoric_museum
+description: Jejak Purba - katalog benda prasejarah dari museum di Jawa Timur.
+publish_to: 'none'
+version: 2.3.0+6
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  sqflite: ^2.4.1
+  path: ^1.9.0
+  path_provider: ^2.1.4
+  image_picker: ^1.1.2
+  flutter_tts: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+# Ikon aplikasi: jalankan sekali  ->  dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#6B4529"
+  adaptive_icon_foreground: "assets/icon/icon_fg.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/artifacts/
+    - assets/images/museums/
+    - assets/images/eras/
+    - assets/images/light/
